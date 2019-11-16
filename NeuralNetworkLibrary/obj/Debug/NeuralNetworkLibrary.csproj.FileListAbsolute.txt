@@ -1,0 +1,9 @@
+D:\Visual Studio\Проекты\NeuralNetworkLibrary\NeuralNetworkLibrary\bin\Debug\NeuralNetworkLibrary.dll
+D:\Visual Studio\Проекты\NeuralNetworkLibrary\NeuralNetworkLibrary\bin\Debug\NeuralNetworkLibrary.pdb
+D:\Visual Studio\Проекты\NeuralNetworkLibrary\NeuralNetworkLibrary\bin\Debug\Newtonsoft.Json.dll
+D:\Visual Studio\Проекты\NeuralNetworkLibrary\NeuralNetworkLibrary\obj\Debug\NeuralNetworkLibrary.csproj.CoreCompileInputs.cache
+D:\Visual Studio\Проекты\NeuralNetworkLibrary\NeuralNetworkLibrary\obj\Debug\NeuralNetworkLibrary.csproj.CopyComplete
+D:\Visual Studio\Проекты\NeuralNetworkLibrary\NeuralNetworkLibrary\obj\Debug\NeuralNetworkLibrary.dll
+D:\Visual Studio\Проекты\NeuralNetworkLibrary\NeuralNetworkLibrary\obj\Debug\NeuralNetworkLibrary.pdb
+D:\Visual Studio\Проекты\NeuralNetworkLibrary\NeuralNetworkLibrary\obj\Debug\NeuralNetworkLibrary.csprojAssemblyReference.cache
+D:\Visual Studio\Проекты\NeuralNetworkLibrary\NeuralNetworkLibrary\bin\Debug\NeuralNetworkLibrary.xml

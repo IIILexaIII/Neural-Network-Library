@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NeuralNetworkLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:NeuralNetworkLibrary.Layer">
+            <summary>
+            Слой
+            </summary>
+        </member>
+        <member name="F:NeuralNetworkLibrary.Layer.biasNeuron">
+            <summary>
+            Нейрон смещения
+            </summary>
+        </member>
+        <member name="F:NeuralNetworkLibrary.Layer.neurons">
+            <summary>
+            Нейроны
+            </summary>
+        </member>
+        <member name="M:NeuralNetworkLibrary.Layer.#ctor(System.Int32)">
+            <summary>
+            Конструктор
+            </summary>
+            <param name="neuronsCount">Количество нейронов в слое</param>
+        </member>
+        <member name="T:NeuralNetworkLibrary.NeuralNetwork">
+            <summary>
+            Нейронная сеть
+            </summary>
+        </member>
+        <member name="T:NeuralNetworkLibrary.NeuralNetwork.ActivationFunction">
+            <summary>
+            Делегат функции активации
+            </summary>
+        </member>
+        <member name="P:NeuralNetworkLibrary.NeuralNetwork.Function">
+            <summary>
+            Функция активации
+            </summary>
+        </member>
+        <member name="P:NeuralNetworkLibrary.NeuralNetwork.DeriativeFunction">
+            <summary>
+            Производная функции активации
+            </summary>
+        </member>
+        <member name="P:NeuralNetworkLibrary.NeuralNetwork.UseBiasNeurons">
+            <summary>
+            Использовать нейроны смещения
+            </summary>
+        </member>
+        <member name="F:NeuralNetworkLibrary.NeuralNetwork.layers">
+            <summary>
+            Слои нейронной сети
+            </summary>
+        </member>
+        <member name="M:NeuralNetworkLibrary.NeuralNetwork.#ctor(NeuralNetworkLibrary.NeuralNetwork.ActivationFunction,NeuralNetworkLibrary.NeuralNetwork.ActivationFunction,System.Boolean,System.Int32[])">
+            <summary>
+            Конструктор
+            </summary>
+            <param name="Function">Функция активации</param>
+            <param name="DeriativeFunction">Производная функции активации</param>
+            <param name="UseBiasNeurons">Использовать нейроны смещения</param>
+            <param name="neuronsCount">Количество нейронов в каждом слое</param>
+        </member>
+        <member name="M:NeuralNetworkLibrary.NeuralNetwork.#ctor(NeuralNetworkLibrary.NeuralNetwork.ActivationFunction,NeuralNetworkLibrary.NeuralNetwork.ActivationFunction,System.String)">
+            <summary>
+            Конструктор с загрузкой датабазы
+            </summary>
+            <param name="Function">Функция активации</param>
+            <param name="DeriativeFunction">Производная функции активации</param>
+            <param name="dataPath">Путь к сохраненному датапаку</param>
+        </member>
+        <member name="M:NeuralNetworkLibrary.NeuralNetwork.InitializationWeights">
+            <summary>
+            Нулевой инициализатор весов (вызывается автоматически при создании экземпляра класса)
+            </summary>
+        </member>
+        <member name="M:NeuralNetworkLibrary.NeuralNetwork.InitializationWeights(System.Int32,System.Double)">
+            <summary>
+            Случайный инициализатор весов
+            </summary>
+            <param name="seed">Зерно</param>
+            <param name="border">Граница значений весов при инициализации</param>
+        </member>
+        <member name="M:NeuralNetworkLibrary.NeuralNetwork.CalculateLayers(System.Double[])">
+            <summary>
+            Рассчитать все слои
+            </summary>
+            <param name="inputValues">Входные значения</param>
+            <returns>Значение выходных нейронов</returns>
+        </member>
+        <member name="M:NeuralNetworkLibrary.NeuralNetwork.Sigmoid(System.Double)">
+            <summary>
+            Функция активации
+            </summary>
+            <param name="x">Параметр функции</param>
+            <returns>Значение от 0 до 1</returns>
+        </member>
+        <member name="M:NeuralNetworkLibrary.NeuralNetwork.DeriativeSigmoid(System.Double)">
+            <summary>
+            Производная функции активации
+            </summary>
+            <param name="x">Значение сигмоиды в точке x</param>
+            <returns>Значение производной сигмоида</returns>
+        </member>
+        <member name="M:NeuralNetworkLibrary.NeuralNetwork.HyperbolicTangent(System.Double)">
+            <summary>
+            Функция активации
+            </summary>
+            <param name="x">Параметр функции</param>
+            <returns>Значение от -1 до 1</returns>
+        </member>
+        <member name="M:NeuralNetworkLibrary.NeuralNetwork.DeriativeHyperbolicTangent(System.Double)">
+            <summary>
+            Производная функции активации
+            </summary>
+            <param name="x">Значение гиперболического тангенса в точке x</param>
+            <returns>Значение производной гиперболического тангенса</returns>
+        </member>
+        <member name="M:NeuralNetworkLibrary.NeuralNetwork.SaveNetwork(System.String)">
+            <summary>
+            Сохраняет сеть
+            </summary>
+            <param name="path">Путь файла</param>
+        </member>
+        <member name="M:NeuralNetworkLibrary.NeuralNetwork.LoadNetwork(System.String)">
+            <summary>
+            Загружает сеть
+            </summary>
+            <param name="path">Путь файла</param>
+        </member>
+        <member name="T:NeuralNetworkLibrary.NeuralNetworkTrainer">
+            <summary>
+            Тренер нейронной сети
+            </summary>
+        </member>
+        <member name="F:NeuralNetworkLibrary.NeuralNetworkTrainer.learningRatio">
+            <summary>
+            Коэффициент обучения
+            </summary>
+        </member>
+        <member name="F:NeuralNetworkLibrary.NeuralNetworkTrainer.moment">
+            <summary>
+            Момент
+            </summary>
+        </member>
+        <member name="M:NeuralNetworkLibrary.NeuralNetworkTrainer.#ctor(NeuralNetworkLibrary.NeuralNetwork,System.Double,System.Double)">
+            <summary>
+            Конструктор
+            </summary>
+            <param name="Network">Сеть</param>
+            <param name="learningRatio">Коэффициент обучения</param>
+            <param name="moment">Момент</param>
+        </member>
+        <member name="M:NeuralNetworkLibrary.NeuralNetworkTrainer.Train(System.Double[])">
+            <summary>
+            Тренерует сеть
+            </summary>
+            <param name="idealValues">Значения, которые должны быть на выходе</param>
+        </member>
+        <member name="M:NeuralNetworkLibrary.NeuralNetworkTrainer.GetMSE">
+            <summary>
+            MSE - mean square error - среднеквадратическая ошибка
+            </summary>
+            <returns>Среднеквадратическую ошибку</returns>
+        </member>
+        <member name="T:NeuralNetworkLibrary.Neuron">
+            <summary>
+            Нейрон
+            </summary>
+        </member>
+        <member name="F:NeuralNetworkLibrary.Neuron.W">
+            <summary>
+            Весы
+            </summary>
+        </member>
+        <member name="P:NeuralNetworkLibrary.Neuron.Value">
+            <summary>
+            Значение нейрона
+            </summary>
+        </member>
+        <member name="P:NeuralNetworkLibrary.Neuron.Error">
+            <summary>
+            Ошибка нейрона
+            </summary>
+        </member>
+        <member name="P:NeuralNetworkLibrary.Neuron.Delta">
+            <summary>
+            Дельта нейрона
+            </summary>
+        </member>
+        <member name="F:NeuralNetworkLibrary.Neuron.DeltaWPrevious">
+            <summary>
+            Предыдущая дельта весов
+            </summary>
+        </member>
+    </members>
+</doc>

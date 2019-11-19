@@ -47,7 +47,7 @@
         </member>
         <member name="P:NeuralNetworkLibrary.NeuralNetwork.UseBiasNeurons">
             <summary>
-            Использовать нейроны смещения
+            Использовать ли нейроны смещения
             </summary>
         </member>
         <member name="F:NeuralNetworkLibrary.NeuralNetwork.layers">
@@ -164,7 +164,7 @@
             <summary>
             MSE - mean square error - среднеквадратическая ошибка
             </summary>
-            <returns>Среднеквадратическую ошибку</returns>
+            <returns>Среднеквадратическую ошибку выходных нейронов</returns>
         </member>
         <member name="T:NeuralNetworkLibrary.Neuron">
             <summary>

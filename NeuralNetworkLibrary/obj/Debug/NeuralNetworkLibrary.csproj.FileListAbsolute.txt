@@ -7,3 +7,12 @@ D:\Visual Studio\Проекты\NeuralNetworkLibrary\NeuralNetworkLibrary\obj\De
 D:\Visual Studio\Проекты\NeuralNetworkLibrary\NeuralNetworkLibrary\obj\Debug\NeuralNetworkLibrary.pdb
 D:\Visual Studio\Проекты\NeuralNetworkLibrary\NeuralNetworkLibrary\obj\Debug\NeuralNetworkLibrary.csprojAssemblyReference.cache
 D:\Visual Studio\Проекты\NeuralNetworkLibrary\NeuralNetworkLibrary\bin\Debug\NeuralNetworkLibrary.xml
+D:\GitHub\Neural-Network-Library\NeuralNetworkLibrary\bin\Debug\NeuralNetworkLibrary.xml
+D:\GitHub\Neural-Network-Library\NeuralNetworkLibrary\bin\Debug\NeuralNetworkLibrary.dll
+D:\GitHub\Neural-Network-Library\NeuralNetworkLibrary\bin\Debug\NeuralNetworkLibrary.pdb
+D:\GitHub\Neural-Network-Library\NeuralNetworkLibrary\bin\Debug\Newtonsoft.Json.dll
+D:\GitHub\Neural-Network-Library\NeuralNetworkLibrary\obj\Debug\NeuralNetworkLibrary.csprojAssemblyReference.cache
+D:\GitHub\Neural-Network-Library\NeuralNetworkLibrary\obj\Debug\NeuralNetworkLibrary.csproj.CoreCompileInputs.cache
+D:\GitHub\Neural-Network-Library\NeuralNetworkLibrary\obj\Debug\NeuralNetworkLibrary.csproj.CopyComplete
+D:\GitHub\Neural-Network-Library\NeuralNetworkLibrary\obj\Debug\NeuralNetworkLibrary.dll
+D:\GitHub\Neural-Network-Library\NeuralNetworkLibrary\obj\Debug\NeuralNetworkLibrary.pdb

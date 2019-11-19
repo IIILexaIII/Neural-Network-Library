@@ -204,7 +204,9 @@ namespace NeuralNetworkLibrary
         /// <param name="path">Путь файла</param>
         public void SaveNetwork(string path)
         {
-            object[] saveData = new object[] { UseBiasNeurons, layers};
+            SaveData saveData;
+            saveData.useBiasNeuron = UseBiasNeurons;
+            saveData.layers = layers;
             var jsonData = JsonConvert.SerializeObject(saveData);
             try
             {
@@ -226,9 +228,9 @@ namespace NeuralNetworkLibrary
             try
             {
                 var loadData = File.ReadAllText(path);
-                var jsonData = JsonConvert.DeserializeObject<object[]>(loadData);
-                UseBiasNeurons = (bool)jsonData[0];
-                layers = jsonData[1] as Layer[];
+                var jsonData = JsonConvert.DeserializeObject<SaveData>(loadData);
+                UseBiasNeurons = jsonData.useBiasNeuron;
+                layers = jsonData.layers;
             }
             catch
             {
